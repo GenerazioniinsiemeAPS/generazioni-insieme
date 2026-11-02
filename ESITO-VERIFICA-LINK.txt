@@ -1,0 +1,4 @@
+Controllo statico dei percorsi locali:
+Nessun collegamento o immagine locale mancante.
+
+Le URL esterne e i link mailto richiedono test reali.

@@ -15,88 +15,14 @@ document.querySelectorAll('.nav-group').forEach(group=>{group.addEventListener('
 
 
 
-// Indicazione della pagina/sezione attiva, indipendente dall'apertura dei menu.
-(function(){
-  const nav=document.querySelector('.navlinks');if(!nav)return;
-  const links=[...nav.querySelectorAll('a[href]')];
-  const page=()=>location.pathname.split('/').pop()||'index.html';
-  const targets={
-    'partecipa.html#scrivici':'Contatti',
-    'partecipa.html#collaborazioni':'Partecipa'
-  };
-  function refresh(){
-    const current=page(), hash=decodeURIComponent(location.hash||'');
-    const key=current+hash;
-    nav.querySelectorAll('.nav-current').forEach(el=>el.classList.remove('nav-current'));
-    nav.querySelectorAll('.nav-current-group').forEach(el=>el.classList.remove('nav-current-group'));
-    nav.querySelectorAll('[aria-current]').forEach(el=>el.removeAttribute('aria-current'));
-    let active=links.find(a=>{
-      const u=new URL(a.getAttribute('href'),location.href);
-      return (u.pathname.split('/').pop()||'index.html')===current && decodeURIComponent(u.hash)===hash;
-    });
-    if(!active && !hash)active=links.find(a=>{
-      const u=new URL(a.getAttribute('href'),location.href);
-      return (u.pathname.split('/').pop()||'index.html')===current && !u.hash && a.closest('.nav-group');
-    })||links.find(a=>{
-      const u=new URL(a.getAttribute('href'),location.href);
-      return (u.pathname.split('/').pop()||'index.html')===current && !u.hash;
-    });
-    if(!active)return;
-    active.classList.add('nav-current');active.setAttribute('aria-current',hash?'location':'page');
-    const group=active.closest('.nav-group');
-    if(group)group.classList.add('nav-current-group');
-  }
-  refresh();window.addEventListener('hashchange',refresh);window.addEventListener('pageshow',refresh);
-})();
 
-// Calcola il margine di scorrimento a partire dall'altezza reale dell'header.
-(function(){
- const header=document.querySelector('header');
- if(!header)return;
- const setOffset=()=>document.documentElement.style.setProperty('--anchor-offset',Math.ceil(header.getBoundingClientRect().height+20)+'px');
- setOffset();
- if('ResizeObserver' in window)new ResizeObserver(setOffset).observe(header);
- window.addEventListener('resize',setOffset);
- function align(){
-  setOffset();if(!location.hash)return;
-  let id;try{id=decodeURIComponent(location.hash.slice(1))}catch(e){return}
-  const target=document.getElementById(id);
-  if(target)target.scrollIntoView({block:'start',behavior:'instant'});
- }
- window.addEventListener('load',align);
- window.addEventListener('hashchange',align);
-})();
-
-// Navigazione multipagina: seleziona la voce e il gruppo per il file corrente.
+// Stato attivo unico: una sola voce per pagina, senza conflitti tra handler.
 (function(){
  const nav=document.querySelector('.navlinks');if(!nav)return;
  const page=location.pathname.split('/').pop()||'index.html';
- const groups={
- 'associazione.html':'Chi siamo','consiglio-direttivo.html':'Chi siamo',
- 'attivita.html':'Progetti','aprilia-si-racconta.html':'Progetti','progettazione-europea.html':'Progetti',
- 'libri.html':'Cultura','intervista.html':'Cultura',
- 'partecipa.html':'Partecipa','volontariato.html':'Partecipa','collaborazioni.html':'Partecipa',
- 'trasparenza.html':'Trasparenza','privacy.html':'Trasparenza',
- 'contatti.html':'Contatti','scrivici.html':'Contatti'};
- nav.querySelectorAll('a').forEach(a=>{a.classList.remove('nav-current');a.removeAttribute('aria-current');
- if((new URL(a.href).pathname.split('/').pop()||'index.html')===page){a.classList.add('nav-current');a.setAttribute('aria-current','page');}});
- nav.querySelectorAll('.nav-group').forEach(g=>{g.classList.remove('nav-current-group');g.querySelector('.nav-trigger')?.removeAttribute('aria-current');
- if(g.querySelector('.nav-trigger')?.textContent.trim().startsWith(groups[page]||'\0')){g.classList.add('nav-current-group');g.querySelector('.nav-trigger')?.setAttribute('aria-current','true');}});
+ const candidates=[...nav.querySelectorAll('a[href]')];
+ const active=candidates.find(a=>{const u=new URL(a.getAttribute('href'),location.href);return (u.pathname.split('/').pop()||'index.html')===page && (!u.hash||u.hash===location.hash);});
+ nav.querySelectorAll('[aria-current]').forEach(a=>a.removeAttribute('aria-current'));
+ nav.querySelectorAll('.nav-current,.nav-current-group').forEach(a=>a.classList.remove('nav-current','nav-current-group'));
+ if(active){active.classList.add('nav-current');active.setAttribute('aria-current','page');active.closest('.nav-group')?.classList.add('nav-current-group');}
 })();
-
-// Sezioni delle nuove pagine autonome.
-document.addEventListener('DOMContentLoaded', function () {
-  const page = location.pathname.split('/').pop();
-  const nav = document.querySelector('.navlinks');
-  if (!nav) return;
-  const groups = [...nav.querySelectorAll('.nav-group')];
-  const target = nav.querySelector('a[href="' + page + '"]');
-  if (!target) return;
-  nav.querySelectorAll('a[aria-current]').forEach(a => a.removeAttribute('aria-current'));
-  nav.querySelectorAll('.nav-current').forEach(a => a.classList.remove('nav-current'));
-  groups.forEach(g => g.classList.remove('nav-current-group'));
-  target.classList.add('nav-current');
-  target.setAttribute('aria-current', 'page');
-  const group = target.closest('.nav-group');
-  if (group) group.classList.add('nav-current-group');
-});

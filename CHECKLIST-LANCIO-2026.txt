@@ -1,0 +1,30 @@
+GENERAZIONI INSIEME APS — CHECKLIST DI RILASCIO (02/11/2026)
+
+STATO: PACCHETTO DI PRE-PUBBLICAZIONE, NON ANCORA APPROVATO PER IL PUBBLICO.
+Il sito conserva volutamente robots.txt Disallow: / e meta robots noindex,nofollow.
+NON rimuovere questi blocchi fino a tutte le verifiche qui sotto.
+
+VERIFICHE CHE RICHIEDONO CONFERMA UMANA
+[ ] Verificare iscrizione RUNTS e legittimo uso di APS; controllare denominazione e dati ufficiali.
+[ ] Approvare la versione definitiva dell'informativa privacy con consulente competente.
+[ ] Verificare cookie, mappe, servizi terzi e eventuali strumenti di tracciamento sul dominio reale.
+[ ] Confermare sede, recapiti, email destinataria e cariche del Consiglio direttivo.
+[ ] Verificare fotografie, liberatorie, licenze, copertine e uso delle immagini segnaposto.
+[ ] Controllare PDF dello Statuto: contenuto, metadati, dati personali, versione approvata.
+[ ] Verificare collegamenti esterni, acquisti e funzionamento mailto su smartphone/desktop.
+[ ] Controllare il sito con tastiera, screen reader, zoom 200%, contrasto e dispositivi mobili.
+[ ] Provare il sito sul dominio HTTPS reale, senza contenuti misti o errori console.
+[ ] Configurare sul server redirect HTTPS, backup, header di sicurezza compatibili, cache e pagine 404.
+[ ] Scegliere il dominio canonico; solo allora predisporre sitemap.xml e canonical assoluti.
+[ ] Dopo approvazione: cambiare TUTTI i meta robots in index,follow e robots.txt in User-agent: * / Allow: /.
+[ ] Verificare il sito pubblicato e l'indicizzazione; inviare sitemap ai motori se opportuno.
+
+INTERVENTI ESEGUITI IN QUESTA VERSIONE
+- Corretti i metadati social Open Graph ripetuti o incoerenti rispetto alle pagine.
+- Corretta la descrizione SEO dove era stata copiata dalla pagina privacy.
+- Unificata la gestione della voce attiva del menu, evitando script concorrenti.
+- Aggiunti attributi di caricamento immagini dove mancavano, senza cambiare grafica o asset.
+- Applicata una protezione coerente contro l'indicizzazione prematura.
+- Verificati i percorsi locali di collegamenti e immagini con controllo statico.
+
+NOTA: nessun test browser, server, accessibilità assistiva o verifica legale è stato certificato.
