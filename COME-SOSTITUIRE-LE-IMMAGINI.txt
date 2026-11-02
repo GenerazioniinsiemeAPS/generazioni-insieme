@@ -1,0 +1,26 @@
+GENERAZIONI INSIEME APS — GUIDA ALLE IMMAGINI
+
+Tutte le fotografie e le copertine sono file separati nella cartella assets.
+Per sostituirle, basta sovrascrivere il file con una nuova immagine mantenendo ESATTAMENTE lo stesso nome e l’estensione .jpg. Non è necessario modificare il codice HTML.
+
+COPERTINE DEI LIBRI
+assets/copertina-pensare-aprilia.jpg
+assets/copertina-societa-longevita.jpg
+
+FOTO CONSIGLIO DIRETTIVO
+assets/paolo-terrinoni.jpg
+assets/giancarlo-tesone.jpg
+assets/maurizio-pecatelli.jpg
+assets/maurizio-todaro.jpg
+assets/fiorella-terrinoni.jpg
+assets/pietro-fazio.jpg
+assets/massimo-di-franco.jpg
+
+Le immagini degli altri sei componenti sono segnaposto neutri sostituibili.
+Le fotografie di Paolo Terrinoni e Pietro Fazio sono quelle inviate dall'utente.
+Le copertine sono le immagini originali fornite dall'utente.
+
+COME APRIRE
+Aprire index.html nel browser. Per pubblicare su GitHub Pages caricare l'intera cartella (file HTML e cartelle assets/documenti).
+
+NOTA: verificare recapiti, incarichi attuali, privacy e diritti prima della pubblicazione ufficiale. I link Amazon effettuano una ricerca ISBN e non sono schede prodotto dirette verificate.

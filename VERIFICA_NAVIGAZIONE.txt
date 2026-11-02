@@ -1,0 +1,3 @@
+Controllo statico di 215 collegamenti interni. Problemi: 1
+('contatti.html', '#contenuto', 'missing anchor')
+Test visivo su browser/dispositivi ancora necessario.

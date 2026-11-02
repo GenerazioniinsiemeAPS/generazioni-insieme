@@ -1,0 +1,5 @@
+CORREZIONE MENU ATTIVO
+
+La pagina selezionata e il relativo menu principale restano evidenziati in colore arancione scuro. Le sezioni della homepage sono riconosciute anche tramite #chi-siamo, #consiglio-direttivo, #attivita e #contatti. Funziona anche sui dispositivi mobili.
+
+Caricare tutti i file dello ZIP mantenendo la struttura delle cartelle. Se il browser mostra il vecchio stile, svuotare la cache o ricaricare forzatamente.

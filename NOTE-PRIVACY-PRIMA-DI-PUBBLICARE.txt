@@ -1,0 +1,12 @@
+GENERAZIONI INSIEME APS — Revisione di minimizzazione dei dati
+
+Modifica effettuata: la mappa Google incorporata nella Home è stata sostituita da un link esterno, per evitare il caricamento automatico di contenuti Google.
+
+Il modulo Partecipa prepara un messaggio nel programma di posta locale; non invia dati al server del sito. Rimane invariato perché non è un modulo di raccolta online. Le email effettivamente inviate sono comunque trattamento di dati personali.
+
+PRIMA DELLA PUBBLICAZIONE:
+1. Sostituire la bozza privacy con un’informativa completa e verificata (titolare APS, contatti, finalità, basi giuridiche, conservazione, diritti, hosting, posta elettronica e destinatari).
+2. Confermare se generazioniinsieme@virgilio.it è davvero il recapito autorizzato dall’APS: compare in varie pagine e potrebbe coinvolgere un soggetto distinto. Non è stato sostituito automaticamente.
+3. Verificare hosting, log, cookie e richieste verso terze parti sul sito effettivamente pubblicato.
+4. Verificare fotografie, diritti di pubblicazione e dati di terzi.
+5. Non considerare il sito esente dal GDPR: l’assenza di cookie non tecnici può rendere superfluo il banner, non l’informativa privacy.

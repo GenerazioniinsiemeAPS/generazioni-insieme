@@ -1,0 +1,14 @@
+VERSIONE CONSOLIDATA — GENERAZIONI INSIEME APS
+Base: grafica corretta 2026 (2), preferita alla variante privacy essenziale perché quest’ultima dichiara l’informativa incompleta.
+
+ATTENZIONE: NON pubblicare senza completare questi controlli:
+1. Verificare e approvare informativa privacy, ruoli dei fornitori, tempi di conservazione e servizi esterni.
+2. Verificare autorizzazioni e diritti su fotografie, nomi, libri e documenti.
+3. Confermare sede, email, organi associativi, dati RUNTS e statuto.
+4. Verificare tutti i collegamenti, mailto e interazioni su smartphone e desktop.
+5. Testare WCAG 2.2 AA con tastiera, screen reader e contrasto; controllare eventuali mappe e risorse esterne.
+6. Configurare HTTPS, header di sicurezza e dominio nel provider di hosting; generare sitemap con URL reale.
+7. Controllare che le descrizioni di progetti e budget restino fedeli allo stato reale.
+
+Migliorie applicate: titoli e descrizioni per pagina, metadata Open Graph, focus visibile, riduzione movimento, lazy loading immagini, link esterni sicuri, doctype HTML normalizzato, menu mobile scorrevole.
+Il punteggio 10/10 non può essere certificato mediante sola analisi statica.

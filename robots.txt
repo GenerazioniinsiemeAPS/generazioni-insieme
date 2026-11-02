@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Rimuovere questo blocco soltanto dopo le verifiche legali e la pubblicazione definitiva.

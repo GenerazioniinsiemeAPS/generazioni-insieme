@@ -1,0 +1,10 @@
+MENU A TENDINA — GENERAZIONI INSIEME APS
+
+Su computer: cliccare una voce per aprire il sottomenu; cliccare ancora per chiudere.
+Su smartphone: aprire il menu ☰ e poi espandere la sezione desiderata.
+Da tastiera: Tab per spostarsi, Invio o Spazio per aprire, freccia giù per entrare, Esc per chiudere.
+
+Le voci e i collegamenti sono presenti nel blocco <nav class="navlinks"> di ogni pagina HTML.
+I CSS si trovano in assets/style.css e gli script in assets/site.js.
+
+Per pubblicare: caricare tutti i file mantenendo la struttura delle cartelle.

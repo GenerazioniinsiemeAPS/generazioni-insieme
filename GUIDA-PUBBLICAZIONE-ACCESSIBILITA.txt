@@ -1,0 +1,11 @@
+GENERAZIONI INSIEME APS — GUIDA ALLA VERSIONE MIGLIORATA
+
+1. Apri index.html per visualizzare il sito.
+2. La nuova pagina partecipa.html presenta tre percorsi: soci, volontari, collaborazioni.
+3. Il modulo NON trasmette dati al sito: prepara un messaggio mailto nel programma email del visitatore. Alcuni dispositivi non hanno un programma email configurato: in quel caso è visibile l'indirizzo di contatto.
+4. La barra accessibilità permette di aumentare il testo e attivare alto contrasto durante la visita. Sono disponibili link per saltare al contenuto e navigazione da tastiera.
+5. L'immagine di apertura usa un WebP ottimizzato; la copia PNG originale resta in assets per eventuali modifiche. Le copertine e le fotografie sono file separati e sostituibili.
+6. SEO: titoli, descrizioni e tag Open Graph sono predisposti. Prima della pubblicazione su dominio definitivo, inserire URL canonici, sitemap.xml con URL reali e dati social reali. Non inserire URL fittizi.
+7. VERIFICARE prima di pubblicare: email e PEC, composizione attuale del direttivo, privacy completa, accuratezza delle pagine, autorizzazioni immagini, link Amazon, eventuale consenso cookie se si attivano strumenti di tracciamento. La mappa Google incorporata carica un servizio esterno: valutare consenso o sostituirla con link alla mappa.
+8. Test suggeriti: Lighthouse/PageSpeed, WAVE/axe, smartphone, tastiera (Tab/Invio/Esc), lettore di schermo, zoom 200%, connessioni lente. Nessun punteggio prestazionale è stato misurato.
+9. L'Atto costitutivo completo NON è incluso; lo Statuto è in documenti/.
